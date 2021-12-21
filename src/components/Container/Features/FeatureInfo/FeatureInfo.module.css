@@ -1,0 +1,49 @@
+.feature {
+  width: 1200px;
+  height: auto;
+  margin: 4rem auto;
+  padding: 24px 0;
+}
+
+.feature div {
+  width: 50%;
+}
+
+.feature h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .feature {
+    width: 960px;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .feature {
+    width: 690px;
+  }
+
+  .feature div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature {
+    width: 510px;
+  }
+
+  .feature h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .feature {
+    width: 100%;
+    padding: 24px 1rem;
+  }
+}

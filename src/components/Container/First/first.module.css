@@ -1,0 +1,127 @@
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info {
+  width: 950px;
+  height: auto;
+  text-align: center;
+  margin: 10rem auto 1.5rem;
+}
+
+.info h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.info p {
+  margin-bottom: 24px;
+}
+
+.info button {
+  width: 164px;
+  height: 44px;
+  font-size: 20px;
+  color: #0065ff;
+  padding: 6px 16px;
+  border: 1px solid #0065ff;
+  border-radius: 0.2rem;
+  background-color: inherit;
+}
+
+.image {
+  width: 1100px;
+  height: 778px;
+  padding: 0 1rem;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.join {
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.join p {
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.join div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join div svg {
+  margin: 0 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .info {
+    width: 700px;
+  }
+
+  .image {
+    width: 930px;
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .image {
+    width: 690px;
+    height: 480px;
+  }
+
+  .join {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    width: 500px;
+  }
+
+  .info h1 {
+    font-size: 24px;
+  }
+
+  .image {
+    width: 510px;
+    height: 357px;
+  }
+
+  .join div svg {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .info {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .join {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}

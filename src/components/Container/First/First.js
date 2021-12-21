@@ -1,31 +1,24 @@
 import React from "react";
-import style from "./ContainerTop.module.css";
+import style from "./first.module.css";
 
-const ContainerTop = () => {
+const First = () => {
   return (
-    <div className={style.container_top}>
-      <div className={style.container_work}>
-        <h1 className={style.title}>
-          It’s more than work. It’s a way of working together.
-        </h1>
-        <p className={style.container}>
+    <section className={style.first}>
+      <div className={style.info}>
+        <h1>It’s more than work. It’s a way of working together.</h1>
+        <p>
           Start with a Trello board, lists, and cards. Customize and expand with
           more features as your teamwork grows. Manage projects, organize tasks,
           and build team spirit—all in one place.
         </p>
-        <button type="button" className={style.btn_container}>
-          Start doning
+        <button>
+          <a>Start doing →</a>
         </button>
       </div>
-
-      <div className={style.container_img}>
-        <img
-          src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/product/89d378b845766a8f0c48e955336266f8/board.png"
-          alt="image container"
-        />
+      <div className={style.image}>
+        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/product/89d378b845766a8f0c48e955336266f8/board.png" />
       </div>
-
-      <div className={style.join_list}>
+      <div className={style.join}>
         <p>
           Join over 1,000,000 teams worldwide that are using Trello to get more
           done.
@@ -128,8 +121,8 @@ const ContainerTop = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ContainerTop;
+export default First;

@@ -1,0 +1,234 @@
+.choose,
+.details,
+.meet,
+.power {
+  width: 1200px;
+  height: auto;
+  margin: 4rem auto;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose .image img,
+.meet .image img {
+  width: 445px;
+  height: 336px;
+}
+
+.details .image img {
+  width: 445px;
+  height: 362px;
+}
+
+.power .image img {
+  width: 445px;
+  height: 400px;
+}
+
+.chooseInfo,
+.detailsInfo,
+.meetInfo,
+.powerInfo {
+  width: 650px;
+}
+
+.chooseInfo .info h5,
+.detailsInfo .info h5,
+.meetInfo .info h5,
+.powerInfo .info h5 {
+  margin-bottom: 8px;
+}
+
+.chooseInfo .info h2,
+.detailsInfo .info h2,
+.meetInfo .info h2,
+.powerInfo .info h2 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.chooseInfo .info p,
+.detailsInfo .info p,
+.meetInfo .info p,
+.powerInfo .info p {
+  margin-bottom: 24px;
+  color: #7a869a;
+}
+
+.chooseInfo .expand h3,
+.detailsInfo .expand h3,
+.meetInfo .expand h3,
+.powerInfo .expand h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.chooseInfo .expand div,
+.detailsInfo .expand div,
+.meetInfo .expand div,
+.powerInfo .expand div {
+  padding-left: 20px;
+}
+
+.chooseInfo .expand div p,
+.detailsInfo .expand div p,
+.meetInfo .expand div p,
+.powerInfo .expand div p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.chooseInfo .expand div ul,
+.detailsInfo .expand div ul,
+.meetInfo .expand div ul,
+.powerInfo .expand div ul {
+  padding-left: 32px;
+}
+
+.chooseInfo .expand div ul li,
+.detailsInfo .expand div ul li,
+.meetInfo .expand div ul li,
+.powerInfo .expand div ul li {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .choose,
+  .details,
+  .meet,
+  .power {
+    width: 960px;
+  }
+
+  .choose .image img,
+  .meet .image img {
+    width: 370px;
+    height: 279px;
+  }
+
+  .details .image img {
+    width: 370px;
+    height: 300px;
+  }
+
+  .power .image img {
+    width: 370px;
+    height: 333px;
+  }
+
+  .chooseInfo,
+  .detailsInfo,
+  .meetInfo,
+  .powerInfo {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .choose,
+  .details,
+  .meet,
+  .power {
+    width: 690px;
+  }
+
+  .choose .image img,
+  .meet .image img {
+    width: 270px;
+    height: 204px;
+  }
+
+  .details .image img {
+    width: 270px;
+    height: 219px;
+  }
+
+  .power .image img {
+    width: 270px;
+    height: 243px;
+  }
+
+  .chooseInfo,
+  .detailsInfo,
+  .meetInfo,
+  .powerInfo {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .choose,
+  .meet {
+    width: 540px;
+    flex-direction: column;
+  }
+
+  .details,
+  .power {
+    width: 540px;
+    flex-direction: column-reverse;
+  }
+
+  .choose .image img,
+  .meet .image img {
+    width: 510px;
+    height: 385px;
+  }
+
+  .details .image img {
+    width: 510px;
+    height: 415px;
+  }
+
+  .power .image img {
+    width: 510px;
+    height: 459px;
+  }
+
+  .chooseInfo .info h2,
+  .detailsInfo .info h2,
+  .meetInfo .info h2,
+  .powerInfo .info h2 {
+    font-size: 24px;
+  }
+
+  .chooseInfo .expand h3,
+  .detailsInfo .expand h3,
+  .meetInfo .expand h3,
+  .powerInfo .expand h3 {
+    font-size: 20px;
+  }
+
+  .chooseInfo,
+  .detailsInfo,
+  .meetInfo,
+  .powerInfo {
+    width: 510px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .choose,
+  .details,
+  .meet,
+  .power {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .choose .image img,
+  .details .image img,
+  .meet .image img,
+  .power .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .chooseInfo,
+  .detailsInfo,
+  .meetInfo,
+  .powerInfo {
+    width: 100%;
+  }
+}
