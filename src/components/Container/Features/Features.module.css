@@ -64,6 +64,14 @@
   margin-bottom: 8px;
 }
 
+.chooseInfo .expand h3 a:hover,
+.detailsInfo .expand h3 a:hover,
+.meetInfo .expand h3 a:hover,
+.powerInfo .expand h3 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .chooseInfo .expand div,
 .detailsInfo .expand div,
 .meetInfo .expand div,

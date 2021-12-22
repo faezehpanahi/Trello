@@ -1,0 +1,14 @@
+.signup {
+  width: 100%;
+  padding: 48px 15px;
+}
+
+.card {
+  width: 1200px;
+  height: 317px;
+  background: #eae6ff;
+  background-image: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/sign-up/95ae6a1…/background.svg"),
+    linear-gradient(0deg, #4c9aff, #403294 100%);
+  padding: 80px 16px;
+  margin: 0 auto;
+}

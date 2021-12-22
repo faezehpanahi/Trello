@@ -1,0 +1,136 @@
+.customer {
+  width: 100%;
+  background-color: #e6fcff;
+}
+
+.customerInfo {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 48px 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoInfo .logo {
+  width: 190px;
+  height: 80px;
+  background-image: "https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/customer-stories/4c529ec1377a131a1ae1772cb57b5ab2/ebay.svg";
+}
+
+.qoutInfo {
+  width: 855px;
+  padding: 0 1rem;
+}
+
+.qoutInfo blockquote {
+  /* width: 825px; */
+  font-size: 32px;
+  margin-bottom: 16px;
+  padding: 24px 0 0 48px;
+}
+
+.qoutInfo blockquote svg {
+  width: 33px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.qoutInfo footer {
+  font-size: 20px;
+  text-align: right;
+}
+
+.slideButton {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-top: 5px solid #172b4d;
+  padding-top: 12px;
+  margin-top: 32px;
+}
+
+.slideButton li {
+  width: 35px;
+  height: 35px;
+}
+
+.slideButton .dot {
+  font-size: 40px;
+}
+.slideButton .arrow {
+  color: #fff;
+  background-color: #172b4d;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .customerInfo {
+    width: 960px;
+  }
+
+  .qoutInfo {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .customerInfo {
+    width: 720px;
+  }
+
+  .qoutInfo {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customerInfo {
+    width: 540px;
+  }
+
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 100%;
+    height: 128px;
+  }
+
+  .logoAbout {
+    display: none;
+  }
+
+  .qoutInfo {
+    width: 100%;
+  }
+
+  .qoutInfo blockquote {
+    text-align: center;
+    padding: 0;
+  }
+
+  .qoutInfo footer {
+    text-align: center;
+  }
+
+  .slideButton {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .customerInfo {
+    width: 100%;
+  }
+}

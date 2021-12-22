@@ -1,0 +1,134 @@
+.checkOut {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1140px;
+  /* height: 241px; */
+  margin: 48px auto;
+  padding: 24px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #000 solid;
+  border-top: 1px #000 solid;
+}
+
+.price,
+.tour {
+  width: 570px;
+  display: flex;
+}
+
+.price img {
+  width: 103px;
+  height: 167px;
+}
+
+.tour img {
+  width: 113px;
+  height: 135px;
+}
+
+.price div,
+.tour div {
+  width: 397px;
+  padding: 0 1rem;
+}
+
+.price div h3,
+.tour div h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.price div p,
+.tour div p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.price div button,
+.tour div button {
+  width: 156px;
+  height: 37px;
+  background-color: inherit;
+  border: 1px solid #0065ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.price div button a,
+.tour div button a {
+  text-decoration: none;
+  font-size: 17.5px;
+  padding: 4px 24px;
+  color: #0065ff;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+
+  .price,
+  .tour {
+    width: 480px;
+  }
+
+  .price img {
+    width: 90px;
+    height: 145px;
+  }
+
+  .tour img {
+    width: 90px;
+    height: 108px;
+  }
+
+  .price div,
+  .tour div {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: 720px;
+  }
+
+  .price img,
+  .tour img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+    flex-direction: column;
+  }
+
+  .price div,
+  .tour div {
+    width: 540px;
+    margin-bottom: 1.5rem;
+  }
+
+  .price div h3,
+  .tour div h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container,
+  .price,
+  .tour,
+  .price div,
+  .tour div,
+  .price div p,
+  .tour div p {
+    width: 100%;
+  }
+}
