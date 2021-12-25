@@ -6,9 +6,108 @@
 .card {
   width: 1200px;
   height: 317px;
-  background: #eae6ff;
+  /* background: #eae6ff; */
   background-image: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/sign-up/95ae6a1…/background.svg"),
     linear-gradient(0deg, #4c9aff, #403294 100%);
   padding: 80px 16px;
   margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card h3 {
+  width: 710px;
+  margin-bottom: 48px;
+}
+
+.card form input {
+  width: 350px;
+  height: 45px;
+  padding: 6px 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #b4b4b4;
+  margin: 0 4px;
+}
+
+.card form button {
+  width: 166px;
+  height: 45px;
+  padding: 6px 12px;
+  font-size: 20px;
+  background-color: #00b8d9;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin: 0 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 930px;
+  }
+
+  .card form input {
+    width: 290px;
+  }
+
+  .card form button {
+    width: 135px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .card {
+    width: 690px;
+  }
+
+  .card h3 {
+    width: 450px;
+  }
+
+  .card form input {
+    width: 210px;
+  }
+
+  .card form button {
+    width: 114px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 510px;
+    height: 236px;
+  }
+
+  .card h3 {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 20px;
+  }
+
+  .card form {
+    width: 100%;
+  }
+
+  .card form input {
+    display: none;
+  }
+
+  .card form button {
+    width: 100%;
+    /* margin: 0 1rem; */
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
 }

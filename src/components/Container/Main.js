@@ -6,6 +6,7 @@ import FeatureInfo from "./FeatureInfo/FeatureInfo";
 import CheckOut from "./CheckOut/CheckOut";
 import Customer from "./Customer/Customer";
 import Signup from "./Signup/Signup";
+import App from "./Applications/App";
 
 const Main = () => {
   return (
@@ -16,6 +17,7 @@ const Main = () => {
       <CheckOut />
       <Customer />
       <Signup />
+      <App />
     </main>
   );
 };

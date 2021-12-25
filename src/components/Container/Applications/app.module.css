@@ -1,0 +1,126 @@
+.apps {
+  width: 1200px;
+  padding: 16px 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 760px;
+  font-size: 20px;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  border: none;
+  width: 171px;
+  height: 51px;
+  margin: 0 5px;
+}
+
+.buttons button img {
+  width: 171px;
+  height: 51px;
+}
+
+@media screen and (max-width: 1200px) {
+  .apps {
+    width: 960px;
+  }
+
+  .container {
+    width: 639px;
+  }
+
+  .buttons button {
+    width: 141px;
+    height: 41px;
+    margin: 0 2px;
+    background-color: inherit;
+  }
+
+  .buttons button img {
+    width: 141px;
+    height: 41px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .apps {
+    width: 720px;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 690px;
+    justify-content: center;
+  }
+
+  .container p {
+    padding-bottom: 8px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 161px;
+    height: 48px;
+    margin: 0 5px;
+  }
+
+  .buttons button img {
+    width: 161px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .apps {
+    width: 540px;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .buttons button {
+    width: 251px;
+    height: 74px;
+  }
+
+  .buttons button img {
+    width: 251px;
+    height: 74px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .apps {
+    width: 100%;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .buttons button {
+    width: 50%;
+  }
+
+  .buttons button img {
+    width: 100%;
+  }
+}
