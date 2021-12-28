@@ -7,6 +7,7 @@ import CheckOut from "./CheckOut/CheckOut";
 import Customer from "./Customer/Customer";
 import Signup from "./Signup/Signup";
 import App from "./Applications/App";
+import { SliderData } from "./Customer/SliderData";
 
 const Main = () => {
   return (
@@ -15,7 +16,7 @@ const Main = () => {
       <FeatureInfo />
       <Features />
       <CheckOut />
-      <Customer />
+      <Customer slides={SliderData} />
       <Signup />
       <App />
     </main>

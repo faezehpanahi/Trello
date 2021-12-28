@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={style.footer}>
       <form className={style.language}>
         <select name="language-picker" id="language-picker">
-          <option value="choose-one" disabled="true">
+          <option value="choose-one" disabled={true}>
             Select your language…
           </option>
           <option value="cs" data-url="https://trello.com/cs">
