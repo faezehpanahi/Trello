@@ -1,7 +1,25 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import style from "./Features.module.css";
 
 const Features = () => {
+  const [choose, setChoose] = useState(false);
+  const [details, setDetails] = useState(false);
+  const [meet, setMeet] = useState(false);
+  const [power, setPower] = useState(false);
+
+  const handleShowChoose = () => {
+    setChoose(!choose);
+  };
+  const handleShowDetalis = () => {
+    setDetails(!details);
+  };
+  const handleShowMeet = () => {
+    setMeet(!meet);
+  };
+  const handleShowPwer = () => {
+    setPower(!power);
+  };
+
   return (
     <Fragment>
       <section className={style.choose}>
@@ -21,10 +39,10 @@ const Features = () => {
             </p>
           </div>
           <div className={style.expand}>
-            <h3>
+            <h3 onClick={handleShowChoose}>
               <a>Learn more</a>
             </h3>
-            <div>
+            <div style={!choose ? { display: "none" } : { direction: "block" }}>
               <p>
                 You and your team can start up a Trello board in seconds. With
                 the ability to view board data from many different angles, the
@@ -53,10 +71,12 @@ const Features = () => {
             </p>
           </div>
           <div className={style.expand}>
-            <h3>
+            <h3 onClick={handleShowDetalis}>
               <a>Learn more</a>
             </h3>
-            <div>
+            <div
+              style={!details ? { display: "none" } : { direction: "block" }}
+            >
               <p>
                 Spin up a Trello card with a click, then uncover everything it
                 can hold. Break down bigger card tasks into steps with file
@@ -97,10 +117,10 @@ const Features = () => {
             </p>
           </div>
           <div className={style.expand}>
-            <h3>
+            <h3 onClick={handleShowMeet}>
               <a>Learn more</a>
             </h3>
-            <div>
+            <div style={!meet ? { display: "none" } : { direction: "block" }}>
               <p>
                 Butler uses natural language commands to automate just about any
                 task in Trello:
@@ -129,10 +149,10 @@ const Features = () => {
             </p>
           </div>
           <div className={style.expand}>
-            <h3>
+            <h3 onClick={handleShowPwer}>
               <a>Learn more</a>
             </h3>
-            <div>
+            <div style={!power ? { display: "none" } : { direction: "block" }}>
               <p>
                 From Reporting to Custom Fields to your beloved software
                 integrations—we’ve got functionalities, your favorites, and

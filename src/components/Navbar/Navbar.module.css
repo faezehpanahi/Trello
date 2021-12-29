@@ -7,12 +7,17 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
-  /* top: 0;
-  bottom: 0;
-  z-index: 1;
-  position: fixed;
+  /* 
   overflow-y: scroll;
   overflow-x: hidden; */
+  background: linear-gradient(
+    rgba(234, 230, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: fixed;
+  /* background-color: rgba(234, 230, 255, 1); */
+  z-index: 2;
+  top: 0;
 }
 
 .navbar li {
