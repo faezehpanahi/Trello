@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import contextAPI from "../contextAPI/contextAPI";
 import style from "./Navbar.module.css";
 
 const Navbar = () => {
+  const context = useContext(contextAPI);
+  // console.log(context.inView);
+
   return (
-    <nav className={style.navbar}>
+    <nav
+      className={style.navbar}
+      style={{
+        backgroundColor: context.inView ? "inherit" : "rgb(255, 255, 255)",
+        boxShadow: context.inView ? "" : "10px 1px 10px rgb(174, 174, 174)",
+      }}
+    >
       <ul className={style.logo}>
         <li>
           <svg alt="Trello" height="36" viewBox="0 0 312 64" width="126">
