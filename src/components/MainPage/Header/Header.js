@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useContext } from "react";
-import contextAPI from "../contextAPI/contextAPI";
+import contextAPI from "../../contextAPI/contextAPI";
 import style from "./Header.module.css";
 
 const Header = () => {

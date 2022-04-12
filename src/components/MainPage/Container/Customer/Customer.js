@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import contextAPI from "../../contextAPI/contextAPI";
+import contextAPI from "../../../contextAPI/contextAPI";
 import style from "./customer.module.css";
 import { SliderData } from "./SliderData";
 

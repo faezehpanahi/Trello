@@ -1,10 +1,10 @@
 import "./app.css";
 import { useState } from "react";
 import contextAPI from "./components/contextAPI/contextAPI";
-import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
-import Main from "./components/Container/Main";
-import Footer from "./components/Footer/Footer";
+import Navbar from "./components/MainPage/Navbar/Navbar";
+import Header from "./components/MainPage/Header/Header";
+import Main from "./components/MainPage/Container/Main";
+import Footer from "./components/MainPage/Footer/Footer";
 
 function App() {
   const [inView, setInView] = useState(false);

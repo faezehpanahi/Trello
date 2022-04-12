@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import contextAPI from "../contextAPI/contextAPI";
+import contextAPI from "../../contextAPI/contextAPI";
 import style from "./Navbar.module.css";
 
 const Navbar = () => {
