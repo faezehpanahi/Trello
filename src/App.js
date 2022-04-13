@@ -1,10 +1,10 @@
 import "./app.css";
 import { useState } from "react";
 import contextAPI from "./components/contextAPI/contextAPI";
-import Navbar from "./components/MainPage/Navbar/Navbar";
-import Header from "./components/MainPage/Header/Header";
-import Main from "./components/MainPage/Container/Main";
-import Footer from "./components/MainPage/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/MainPage/Home";
+import Login from "./components/Membership/LoginPage/Login";
+import Signup from "./components/Membership/SignupPage/Signup";
 
 function App() {
   const [inView, setInView] = useState(false);
@@ -20,10 +20,11 @@ function App() {
       }}
     >
       <div className="container">
-        <Navbar />
-        <Header />
-        <Main />
-        <Footer />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
       </div>
     </contextAPI.Provider>
   );
