@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <form>
-        <select name="language-picker" id="language-picker">
+      <form className="w-40 text-sm border-2 border-gray-300 text-[#5E6C84] p-2 my-10 mx-auto">
+        <select className="w-full" name="language-picker" id="language-picker">
           <option value="choose-one" disabled={true}>
             Select your language…
           </option>
@@ -82,39 +82,44 @@ const Footer = () => {
           </option>
         </select>
       </form>
-      <hr />
-      <div>
-        {/* <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/e4e8fa01ba058bce8e9f2bb7459516f9/atlassian-logo-white-small.svg" /> */}
-        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/6cdbcb3dcf82bba860f1768d184161ee/atlassian-logo-gray-small.svg" />
+
+      <hr className="w-[400px] h-[2px] bg-gray-300 my-10 mx-auto" />
+
+      <div className="w-36 mb-5 text-sm mx-auto">
+        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/16006ae28f149063408d601e8c80eddc/atlassian-logo-blue-small.svg" />
       </div>
 
       <div>
-        <ul>
-          <li>
+        <ul className="flex justify-between text-[#5E6C84] text-sm my-6">
+          <li className="mx-2 hover:underline">
             <a href="#">Templates</a>
           </li>
-          <li>
+          <li className="mx-2 hover:underline">
             <a href="#">Pricing</a>
           </li>
           <li>
-            <a href="#">Apps</a>
+            <a className="mx-2 hover:underline" href="#">
+              Apps
+            </a>
           </li>
-          <li>
+          <li className="mx-2 hover:underline">
             <a href="#">Jobs</a>
           </li>
-          <li>
+          <li className="mx-2 hover:underline">
             <a href="#">Blog</a>
           </li>
-          <li>
-            <a href="#">Developers</a>
+          <li className="mx-2 hover:underline">
+            <a className="hover:underline" href="#">
+              Developers
+            </a>
           </li>
-          <li>
+          <li className="mx-2 hover:underline">
             <a href="#">About</a>
           </li>
-          <li>
+          <li className="mx-2 hover:underline">
             <a href="#">Help</a>
           </li>
-          <li>
+          <li className="mx-2 hover:underline">
             <a href="#">Cookie Settings</a>
           </li>
         </ul>

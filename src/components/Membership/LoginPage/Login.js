@@ -5,7 +5,7 @@ import FormLogin from "./FormLogin";
 
 const Login = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center bg-white">
       <Header />
       <FormLogin />
       <Footer />

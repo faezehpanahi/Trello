@@ -5,7 +5,7 @@ import Header from "../Header";
 
 const Signup = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center bg-white">
       <Header />
       <FormSignup />
       <Footer />

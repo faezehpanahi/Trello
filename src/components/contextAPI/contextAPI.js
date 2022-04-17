@@ -5,6 +5,10 @@ const contextAPI = createContext({
   setInView: () => {},
   current: 0,
   setCurrent: () => {},
+  displaySignup: true,
+  setDisplaySignup: () => {},
+  inputValue: "",
+  setInputValue: () => {},
 });
 
 export default contextAPI;
